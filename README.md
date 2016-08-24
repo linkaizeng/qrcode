@@ -1,1 +1,1 @@
-# qrcode二维码扫描跳转页面，实现android、ios使用 二维码
+# qrcode二维码扫描跳转页面，实现android、ios使用同一个二维码
