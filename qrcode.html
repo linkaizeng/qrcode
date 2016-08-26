@@ -45,11 +45,16 @@
                     var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
                     document.write('<img src="./pic.jpg" width='+(width-5)+'px height='+(height-60)+'px></img>');
                 }else {
-                    window.location="https://itunes.apple.com/app/idAPPID";
+                    window.location = "https://itunes.apple.com/app/idAPPID";
                 }
             }
             else if (browser.versions.android) {
-                window.location="APP应用宝地址";
+                if (is_weixin) {
+					//兼容微信
+					window.location = "APP应用宝地址";
+				}else {
+					window.location = "服务器apk下载地址"
+				}
             }
  
         </script>
